@@ -9,6 +9,8 @@ end
 
 gem 'devise'
 gem 'rails', '~> 5.1.5'
+gem 'sidekiq'
+gem 'sinatra'
 gem 'therubyracer', platforms: :ruby, github: 'cowboyd/therubyracer'
 
 gem 'mysql2', '>= 0.3.18', '< 0.5'
