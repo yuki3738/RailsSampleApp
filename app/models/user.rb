@@ -22,6 +22,7 @@
 #  locked_at              :datetime
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  name                   :string(255)
 #
 
 class User < ApplicationRecord
@@ -32,5 +33,13 @@ class User < ApplicationRecord
          :confirmable, :lockable, :timeoutable
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later
+  end
+
+  def login=(login)
+    @login = login
+  end
+
+  def login
+    @login || name || email
   end
 end
