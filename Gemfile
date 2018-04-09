@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.5'
 gem 'sidekiq'
 gem 'sinatra'
 gem 'therubyracer', platforms: :ruby, github: 'cowboyd/therubyracer'
+gem 'paperclip', '~> 5.0.0'
 
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 
